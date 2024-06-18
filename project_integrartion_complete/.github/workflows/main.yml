@@ -1,5 +1,4 @@
-
-name: ci-project    
+name: CI/CD Pipeline    
 
 on:
   push:
@@ -31,10 +30,8 @@ jobs:
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
-        cd docs
-        git init
-        git add .
+        git add docso
         git commit -m 'Generate and update documentation'
-        git push --force --set-upstream origin gh-pages  
+        git push origin main  
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

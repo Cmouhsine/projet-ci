@@ -3,9 +3,9 @@ from geometry import rectangle_area, rectangle_perimeter, circle_area, circle_ci
 
 class TestGeometry(unittest.TestCase):
     def test_rectangle_area(self):
-        self.assertEqual(rectangle_area(5, 3), 15)
+        self.assertEqual(rectangle_area(2, 3), 6)
         self.assertEqual(rectangle_area(0, 5), 0)
-        self.assertEqual(rectangle_area(-1, 4), -4)
+        self.assertEqual(rectangle_area(-1, 5), -5)
     
     def test_rectangle_perimeter(self):
         self.assertEqual(rectangle_perimeter(5, 3), 16)

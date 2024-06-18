@@ -1,5 +1,6 @@
 """
 @file geometry.py
+@auhor Mouhsine CHRINBOU
 @brief This module contains functions to calculate area and perimeter of geometrical shapes.
 """
 import math
